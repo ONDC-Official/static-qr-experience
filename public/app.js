@@ -11,6 +11,31 @@
     '<circle cx="12" cy="10" r="3" />' +
     "</svg>";
 
+  var NAVBAR_HTML =
+    '<nav class="ondc-navbar" aria-label="ONDC">' +
+    '<div class="ondc-navbar-inner">' +
+    '<a class="ondc-logo" href="https://ondc.org" target="_blank" rel="noopener noreferrer" ' +
+    'aria-label="ONDC – Open Network for Digital Commerce">' +
+    '<img src="/public/ondc-logo.svg" alt="ONDC" class="ondc-logo-img" height="34" />' +
+    "</a>" +
+    '<span class="ondc-navbar-product">Experience Discover</span>' +
+    "</div>" +
+    "</nav>";
+
+  var FOOTER_HTML =
+    '<footer class="app-footer">' +
+    '<div class="app-footer-inner">' +
+    '<span class="app-footer-brand">Powered by ONDC</span>' +
+    "</div>" +
+    "</footer>";
+
+  // Kick off the data fetch as soon as this (deferred) script runs, instead
+  // of waiting for a DOMContentLoaded handler to fire and start it later.
+  var dataPromise = fetch(DATA_URL).then(function (res) {
+    if (!res.ok) throw new Error("Failed to load " + DATA_URL);
+    return res.json();
+  });
+
   function getOS() {
     var ua = navigator.userAgent || navigator.vendor || window.opera || "";
     if (/android/i.test(ua)) return "Android";
@@ -40,13 +65,15 @@
     });
   }
 
-  function logoLabel(label, logoUrl, iconClass) {
+  function findBySlug(list, slug) {
+    return (list || []).find(function (item) {
+      return item.slug === slug;
+    });
+  }
+
+  function logoLabel(label, logoUrl) {
     var icon = logoUrl
-      ? '<span class="' +
-        (iconClass || "seller-logo") +
-        '"><img src="' +
-        logoUrl +
-        '" alt="" /></span>'
+      ? '<span class="seller-logo"><img src="' + logoUrl + '" alt="" /></span>'
       : '<span class="seller-dot"></span>';
     return (
       '<span class="seller-name">' +
@@ -67,16 +94,18 @@
       "</div>";
   }
 
-  function renderCityPicker(container, cities) {
+  // Renders a plain list of links (cities, or entities within a city) —
+  // shared by the city picker and the entity picker.
+  function renderLinkList(container, items, hrefFor) {
     container.innerHTML =
       '<ul class="seller-list">' +
-      cities
-        .map(function (city) {
+      items
+        .map(function (item) {
           return (
-            '<li class="seller-item"><a href="/' +
-            city.slug +
-            '/">' +
-            logoLabel(city.name) +
+            '<li class="seller-item"><a href="' +
+            hrefFor(item) +
+            '">' +
+            logoLabel(item.name) +
             "</a></li>"
           );
         })
@@ -84,26 +113,7 @@
       "</ul>";
   }
 
-  function renderEntityPicker(container, city) {
-    container.innerHTML =
-      '<ul class="seller-list">' +
-      city.entities
-        .map(function (entity) {
-          return (
-            '<li class="seller-item"><a href="/' +
-            city.slug +
-            "/" +
-            entity.slug +
-            '/">' +
-            logoLabel(entity.name) +
-            "</a></li>"
-          );
-        })
-        .join("") +
-      "</ul>";
-  }
-
-  function renderBuyerList(container, entity) {
+  function renderBuyerList(container, entity, fullName) {
     var items = entity.buyers
       .map(function (buyer) {
         if (buyer.status === "live" && buyer.url) {
@@ -138,7 +148,7 @@
         gtag("event", "buyer_app_click", {
           app_name: link.dataset.app || "unknown",
           platform_os: os,
-          entity_name: entity.fullName,
+          entity_name: fullName,
           destination_url: link.href,
         });
       });
@@ -146,7 +156,7 @@
 
     gtag("event", "platform_detected", {
       platform_os: os,
-      entity_name: entity.fullName,
+      entity_name: fullName,
     });
   }
 
@@ -168,27 +178,25 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    var navSlot = document.getElementById("navbar-slot");
+    if (navSlot) navSlot.outerHTML = NAVBAR_HTML;
+    var footerSlot = document.getElementById("footer-slot");
+    if (footerSlot) footerSlot.outerHTML = FOOTER_HTML;
+
+    var logoEl = document.getElementById("header-logo");
+    if (logoEl) logoEl.innerHTML = LOCATION_ICON;
+
     var body = document.body;
     var citySlug = body.getAttribute("data-city");
     var entitySlug = body.getAttribute("data-entity");
     var container = document.getElementById("main-content");
     var titleEl = document.getElementById("page-title");
 
-    fetch(DATA_URL)
-      .then(function (res) {
-        if (!res.ok) throw new Error("Failed to load " + DATA_URL);
-        return res.json();
-      })
+    dataPromise
       .then(function (data) {
         if (citySlug && entitySlug) {
-          var city = data.cities.filter(function (c) {
-            return c.slug === citySlug;
-          })[0];
-          var entity =
-            city &&
-            city.entities.filter(function (e) {
-              return e.slug === entitySlug;
-            })[0];
+          var city = findBySlug(data.cities, citySlug);
+          var entity = city && findBySlug(city.entities, entitySlug);
           if (!entity)
             return renderStatus(
               container,
@@ -196,14 +204,13 @@
               "This experience could not be found."
             );
 
-          if (titleEl) titleEl.textContent = entity.fullName;
-          document.title = "Book Tickets — " + entity.fullName + " | ONDC";
-          applyHeaderLogo(entity.photo, entity.fullName);
-          renderBuyerList(container, entity);
+          var fullName = entity.name + ", " + city.name;
+          if (titleEl) titleEl.textContent = fullName;
+          document.title = "Book Tickets — " + fullName + " | ONDC";
+          applyHeaderLogo(entity.photo, fullName);
+          renderBuyerList(container, entity, fullName);
         } else if (citySlug) {
-          var cityOnly = data.cities.filter(function (c) {
-            return c.slug === citySlug;
-          })[0];
+          var cityOnly = findBySlug(data.cities, citySlug);
           if (!cityOnly)
             return renderStatus(
               container,
@@ -213,9 +220,13 @@
 
           if (titleEl) titleEl.textContent = cityOnly.name;
           document.title = "Experience Discover — " + cityOnly.name + " | ONDC";
-          renderEntityPicker(container, cityOnly);
+          renderLinkList(container, cityOnly.entities, function (entity) {
+            return "/" + cityOnly.slug + "/" + entity.slug + "/";
+          });
         } else {
-          renderCityPicker(container, data.cities);
+          renderLinkList(container, data.cities, function (city) {
+            return "/" + city.slug + "/";
+          });
         }
       })
       .catch(function () {
