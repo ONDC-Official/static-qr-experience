@@ -31,7 +31,7 @@ There is no build step. Every page is a plain `.html` file that:
 3. Links a shared stylesheet (`public/picker.css` for city/experience pickers,
    `public/entity.css` for buyer-app lists) instead of inlining CSS per page.
 4. Loads `public/app.js`, which fetches `data/entities.json` and renders
-   *everything dynamic* — the navbar, footer, header icon/photo, and the list
+   _everything dynamic_ — the navbar, footer, header icon/photo, and the list
    itself (cities, experiences, or buyer apps) — into placeholder elements
    (`#navbar-slot`, `#footer-slot`, `#header-logo`, `#main-content`).
 
@@ -147,7 +147,7 @@ Only wire up the convention matching your actual host; the others are inert.
 
 ## Analytics
 
-Every page loads GA4 (`G-17W29WN58K`) via `public/app.js`, which fires:
+Every page loads GA4 via `public/app.js`, which fires:
 
 - `platform_detected` — on every buyer-app list page, with detected OS (Android/iOS/Other).
 - `buyer_app_click` — when a visitor taps a buyer app link, with the app name, entity name, and destination URL.

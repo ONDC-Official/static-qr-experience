@@ -2,7 +2,7 @@
   "use strict";
 
   var DATA_URL = "/data/entities.json";
-  var GA_ID = "G-17W29WN58K";
+  var GA_ID = "G-X9LS4KMKBC";
 
   var LOCATION_ICON =
     '<svg class="experience-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
