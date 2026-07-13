@@ -7,6 +7,7 @@
         {
           "slug": "nehru-science-centre-mumbai",
           "name": "Nehru Science Centre",
+          "title": "Get Nehru Science Centre Tickets via ONDC",
           "photo": "/public/assets/buyers/Nehru%20science%20center%20logo.jpg",
           "buyers": [
             {
@@ -38,6 +39,7 @@
         {
           "slug": "visvesvaraya-industrial-technological-museum-bangalore",
           "name": "Visvesvaraya Industrial and Technological Museum",
+          "title": "Get Visvesvaraya Industrial and Technological Museum tickets via ONDC",
           "photo": "/public/assets/buyers/Visvesvaraya%20Industrial%20and%20technological%20museum%20logo.jpg",
           "buyers": [
             {

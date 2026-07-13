@@ -18,7 +18,7 @@
     'aria-label="ONDC – Open Network for Digital Commerce">' +
     '<img src="/public/ondc-logo.svg" alt="ONDC" class="ondc-logo-img" height="34" />' +
     "</a>" +
-    '<span class="ondc-navbar-product">Experience Discover</span>' +
+    '<span class="ondc-navbar-product">Discover Experiences</span>' +
     "</div>" +
     "</nav>";
 
@@ -205,7 +205,7 @@
             );
 
           var fullName = entity.name + ", " + city.name;
-          if (titleEl) titleEl.textContent = fullName;
+          if (titleEl) titleEl.textContent = entity.title || fullName;
           document.title = "Book Tickets — " + fullName + " | ONDC";
           applyHeaderLogo(entity.photo, fullName);
           renderBuyerList(container, entity, fullName);
@@ -219,7 +219,8 @@
             );
 
           if (titleEl) titleEl.textContent = cityOnly.name;
-          document.title = "Experience Discover — " + cityOnly.name + " | ONDC";
+          document.title =
+            "Discover Experiences — " + cityOnly.name + " | ONDC";
           renderLinkList(container, cityOnly.entities, function (entity) {
             return "/" + cityOnly.slug + "/" + entity.slug + "/";
           });
