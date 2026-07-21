@@ -2,7 +2,7 @@ name: Deploy site
 
 on:
   push:
-    branches: [feat/generate-pages-from-entities-json]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
