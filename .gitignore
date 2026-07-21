@@ -32,17 +32,13 @@ node_modules/
 # Build output (if a build step is added later)
 dist/
 build/
-public/assets/js/
-public/assets/css/
+_site/
 
-# Generated HTML (from scripts/generate.mjs)
-public/index.html
-public/*/index.html
-public/*/*/index.html
-
-# Generated city/entity folders (only index.html inside; keep assets/ and data/)
-public/*/
-!public/assets/
-!public/data/
-public/*/*/
-!public/assets/images/
+# Generated HTML (from scripts/generate.mjs) — every top-level directory is
+# a build-output group folder except these fixed project directories.
+/index.html
+/*/
+!/public/
+!/data/
+!/scripts/
+!/.github/
