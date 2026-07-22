@@ -25,7 +25,7 @@
   var FOOTER_HTML =
     '<footer class="app-footer">' +
     '<div class="app-footer-inner">' +
-    '<span class="app-footer-brand">Powered by ONDC</span>' +
+    '<span class="app-footer-brand">Powered by ONDC Network</span>' +
     "</div>" +
     "</footer>";
 
