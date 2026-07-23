@@ -206,7 +206,44 @@ security-header/redirect conventions).
 
 ## Analytics
 
-Every page loads GA4 via `public/js/app.js`, which fires:
+Every page loads GA4 (`G-X9LS4KMKBC`) via `public/js/app.js`. A user property
+`platform_os` (`Android` / `iOS` / `Web`) is set on every page. Experience
+pages (`/<group>/<entity>/`) also fire custom events:
 
-- `platform_detected` — on every buyer-app list page, with detected OS (Android/iOS/Other).
-- `buyer_app_click` — when a visitor taps a buyer app link, with the app name, entity name, and destination URL.
+| Event | When | Key parameters |
+| --- | --- | --- |
+| `experience_view` | Buyer-app list page renders successfully | `platform_os`, `group_name`, `group_slug`, `entity_name`, `entity_slug` |
+| `buyer_app_click` | Visitor taps a buyer app link | `buyer_app`, `platform_os`, `group_name`, `group_slug`, `entity_name`, `entity_slug`, `destination_url` |
+
+`buyer_app_click` uses `transport_type: "beacon"` so the hit is more likely to
+send when the browser opens the outbound tab. City/group pickers and the root
+page are **not** counted as experience views — only `/<group>/<entity>/` pages
+fire `experience_view`.
+
+Buyer `buyer_app` values match `data/entities.json` labels (e.g. `Highway Delite`,
+not `HD`).
+
+### GA4 Admin — register custom dimensions (one-time)
+
+In GA4: **Admin → Data display → Custom definitions → Create custom
+dimension**. Create these **event-scoped** dimensions so params appear in
+reports and Explore:
+
+| Dimension name | Event parameter | Scope |
+| --- | --- | --- |
+| Platform OS | `platform_os` | Event |
+| Group | `group_name` | Event |
+| Buyer app | `buyer_app` | Event |
+| Venue | `entity_name` | Event |
+
+Optional: also register `group_slug` and `entity_slug`. Dimensions only apply to
+data collected **after** they are created.
+
+### How to pull the three daily metrics (Explore → Free form)
+
+1. **Landing page opens** — filter Event name = `experience_view`, metric =
+   Event count (or Total users).
+2. **Android / iOS / Web breakup** — same explore as above; row dimension =
+   Platform OS.
+3. **Buyer app clicks by city** — filter Event name = `buyer_app_click`; row
+   dimensions = Buyer app + Group; metric = Event count.

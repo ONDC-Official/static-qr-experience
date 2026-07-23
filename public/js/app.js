@@ -113,7 +113,7 @@
       "</ul>";
   }
 
-  function renderBuyerList(container, entity, fullName) {
+  function renderBuyerList(container, group, entity) {
     var items = entity.buyers
       .map(function (buyer) {
         return (
@@ -134,17 +134,24 @@
     container.querySelectorAll(".seller-item a").forEach(function (link) {
       link.addEventListener("click", function () {
         gtag("event", "buyer_app_click", {
-          app_name: link.dataset.app || "unknown",
+          buyer_app: link.dataset.app || "unknown",
           platform_os: os,
-          entity_name: fullName,
+          group_name: group.name,
+          group_slug: group.slug,
+          entity_name: entity.name,
+          entity_slug: entity.slug,
           destination_url: link.href,
+          transport_type: "beacon",
         });
       });
     });
 
-    gtag("event", "platform_detected", {
+    gtag("event", "experience_view", {
       platform_os: os,
-      entity_name: fullName,
+      group_name: group.name,
+      group_slug: group.slug,
+      entity_name: entity.name,
+      entity_slug: entity.slug,
     });
   }
 
@@ -196,7 +203,7 @@
           if (titleEl) titleEl.textContent = entity.title || fullName;
           document.title = "Book Tickets — " + fullName + " | ONDC";
           applyHeaderLogo(entity.logo, fullName);
-          renderBuyerList(container, entity, fullName);
+          renderBuyerList(container, group, entity);
         } else if (groupSlug) {
           var groupOnly = findBySlug(data.groups, groupSlug);
           if (!groupOnly)
