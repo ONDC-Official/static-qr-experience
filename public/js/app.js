@@ -98,13 +98,13 @@
     gtag(
       "event",
       "experience_view",
-      Object.assign({ platform_os: os }, props || {})
+      Object.assign({ platform: os, platform_os: os }, props || {})
     );
   }
 
   // Renders a plain list of links (groups, or entities within a group) —
   // shared by the group picker and the entity picker.
-  function renderLinkList(container, items, hrefFor, viewProps) {
+  function renderLinkList(container, items, hrefFor) {
     container.innerHTML =
       '<ul class="seller-list">' +
       items
@@ -119,8 +119,6 @@
         })
         .join("") +
       "</ul>";
-
-    trackExperienceView(viewProps || {});
   }
 
   function renderBuyerList(container, group, entity) {
@@ -227,27 +225,14 @@
           if (titleEl) titleEl.textContent = groupOnly.name;
           document.title =
             "Discover Experiences — " + groupOnly.name + " | ONDC";
-          renderLinkList(
-            container,
-            groupOnly.entities,
-            function (entity) {
-              return "/" + groupOnly.slug + "/" + entity.slug + "/";
-            },
-            {
-              page_title: groupOnly.name,
-              group_name: groupOnly.name,
-              group_slug: groupOnly.slug,
-            }
-          );
+          renderLinkList(container, groupOnly.entities, function (entity) {
+            return "/" + groupOnly.slug + "/" + entity.slug + "/";
+          });
         } else {
-          renderLinkList(
-            container,
-            data.groups,
-            function (group) {
-              return "/" + group.slug + "/";
-            },
-            { page_title: "Landing Page" }
-          );
+          renderLinkList(container, data.groups, function (group) {
+            return "/" + group.slug + "/";
+          });
+          trackExperienceView({ page_title: "Landing Page" });
         }
       })
       .catch(function () {
