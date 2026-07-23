@@ -37,10 +37,9 @@ that:
 
 1. Sets its own `<title>`/`<meta>` tags (so link previews and SEO work without JS).
 2. Declares which slice of data it needs via `data-group` / `data-entity` attributes on `<body>`.
-3. Links a shared stylesheet (`public/css/picker.css` for group/experience pickers,
-   `public/css/entity.css` for buyer-app lists) instead of inlining CSS per page.
+3. Links a shared stylesheet (`public/css/app.css`) instead of inlining CSS per page.
 4. Loads `public/js/app.js`, which fetches `data/entities.json` and renders
-   _everything dynamic_ — the navbar, footer, header icon/photo, and the list
+   _everything dynamic_ — the navbar, footer, header icon/logo, and the list
    itself (groups, experiences, or buyer apps) — into placeholder elements
    (`#navbar-slot`, `#footer-slot`, `#header-logo`, `#main-content`).
 
@@ -62,9 +61,8 @@ scripts/templates/root.html                           # template for the group p
 scripts/templates/group.html                          # template for the experience picker
 scripts/templates/entity.html                         # template for the buyer-app list
 public/js/app.js                                      # shared renderer + navbar/footer/icon injection + GA4 tracking
-public/css/picker.css                                 # shared styles for group/experience picker pages
-public/css/entity.css                                 # shared styles for buyer-app list pages
-public/images/buyers/                                 # buyer app logos + venue photos
+public/css/app.css                                    # shared styles for all pages
+public/images/buyers/                                 # buyer app logos + venue logos
 public/images/ondc-logo.svg
 public/images/favicon.png
 CNAME                                                  # custom domain for GitHub Pages
@@ -97,11 +95,10 @@ nothing else needs to change for day-to-day updates.
           "slug": "nehru-science-centre-mumbai",
           "name": "Nehru Science Centre",
           "title": "Get Nehru Science Centre Tickets via ONDC",
-          "photo": "/public/images/buyers/Nehru%20science%20center%20logo.jpg",
+          "logo": "/public/images/buyers/Nehru%20science%20center%20logo.jpg",
           "buyers": [
             {
               "label": "Highway Delite",
-              "status": "live",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/..."
             }
@@ -119,10 +116,8 @@ nothing else needs to change for day-to-day updates.
     (e.g. `"{productName} — {group} | {orgName}"`).
 - **`groups`**: the top-level array — in this project each group is a city,
   but the concept is generic (could be a brand, a category, a region, etc.).
-- **`status`**: `"live"` (shows as a clickable link, requires `url`), `"pending"`
-  (shows as a greyed-out "Coming soon" row), or `"na"` (omitted entirely).
-- **`logo`**: optional. If omitted, the row falls back to a plain colored dot.
-- **`photo`**: optional venue image shown in the page header. Falls back to a
+- **`logo`** (buyer): optional. If omitted, the row falls back to a plain colored dot.
+- **`logo`** (entity): optional venue image shown in the page header. Falls back to a
   generic location-pin icon if omitted.
 - **`title`**: the entity's page headline (e.g. `"Get Nehru Science Centre
 Tickets via ONDC"`), used verbatim as the `<h1>` on its buyer-app page.

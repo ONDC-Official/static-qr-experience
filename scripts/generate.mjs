@@ -11,7 +11,6 @@ const ROOT = path.resolve(__dirname, "..");
 const DATA_PATH = path.join(ROOT, "data", "entities.json");
 const TEMPLATES_DIR = path.join(__dirname, "templates");
 
-const VALID_STATUSES = new Set(["live", "pending", "na"]);
 // Fixed project directories a group slug must not collide with, and that
 // removeStale() must never touch.
 const RESERVED_ROOT_DIRS = new Set(["public", "data", "scripts", ".github"]);
@@ -118,9 +117,9 @@ function validate(data) {
       if (!entity.name) errors.push("entity " + label + " missing name");
       if (!entity.title) errors.push("entity " + label + " missing title");
 
-      const photoPath = localAssetPath(entity.photo);
-      if (photoPath && !fs.existsSync(photoPath)) {
-        errors.push("entity " + label + " photo missing: " + entity.photo);
+      const logoPath = localAssetPath(entity.logo);
+      if (logoPath && !fs.existsSync(logoPath)) {
+        errors.push("entity " + label + " logo missing: " + entity.logo);
       }
 
       if (!Array.isArray(entity.buyers)) {
@@ -130,29 +129,13 @@ function validate(data) {
 
       for (const buyer of entity.buyers) {
         if (!buyer.label) errors.push("buyer missing label under " + label);
-        if (!VALID_STATUSES.has(buyer.status)) {
+        if (!buyer.url) {
           errors.push(
-            "invalid status '" +
-              buyer.status +
-              "' under " +
-              label +
-              " (" +
-              buyer.label +
-              ")"
+            "buyer '" + buyer.label + "' under " + label + " needs url"
           );
-        }
-        if (buyer.status === "live" && !buyer.url) {
+        } else if (!isValidHttpsUrl(buyer.url)) {
           errors.push(
-            "live buyer '" + buyer.label + "' under " + label + " needs url"
-          );
-        }
-        if (
-          buyer.status === "live" &&
-          buyer.url &&
-          !isValidHttpsUrl(buyer.url)
-        ) {
-          errors.push(
-            "live buyer '" +
+            "buyer '" +
               buyer.label +
               "' under " +
               label +

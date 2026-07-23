@@ -40,7 +40,7 @@
     var ua = navigator.userAgent || navigator.vendor || window.opera || "";
     if (/android/i.test(ua)) return "Android";
     if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) return "iOS";
-    return "Other";
+    return "Web";
   }
 
   var os = getOS();
@@ -116,28 +116,16 @@
   function renderBuyerList(container, entity, fullName) {
     var items = entity.buyers
       .map(function (buyer) {
-        if (buyer.status === "live" && buyer.url) {
-          return (
-            '<li class="seller-item"><a href="' +
-            buyer.url +
-            '" target="_blank" rel="noopener noreferrer" ' +
-            'data-app="' +
-            escapeHtml(buyer.label) +
-            '">' +
-            logoLabel(buyer.label, buyer.logo) +
-            "</a></li>"
-          );
-        }
-        if (buyer.status === "pending") {
-          return (
-            '<li class="seller-item--disabled">' +
-            '<span class="seller-name"><span class="seller-dot seller-dot--soon"></span>' +
-            escapeHtml(buyer.label) +
-            "</span>" +
-            '<span class="seller-soon-badge">Coming soon</span></li>'
-          );
-        }
-        return ""; // status === 'na' → omit entirely
+        return (
+          '<li class="seller-item"><a href="' +
+          buyer.url +
+          '" target="_blank" rel="noopener noreferrer" ' +
+          'data-app="' +
+          escapeHtml(buyer.label) +
+          '">' +
+          logoLabel(buyer.label, buyer.logo) +
+          "</a></li>"
+        );
       })
       .join("");
 
@@ -160,19 +148,19 @@
     });
   }
 
-  function applyHeaderLogo(photoUrl, altText) {
+  function applyHeaderLogo(logoUrl, altText) {
     var logoEl = document.getElementById("header-logo");
     if (!logoEl) return;
-    if (photoUrl) {
-      logoEl.classList.add("has-photo");
+    if (logoUrl) {
+      logoEl.classList.add("has-logo");
       logoEl.innerHTML =
-        '<img class="venue-photo" src="' +
-        photoUrl +
+        '<img class="venue-logo" src="' +
+        logoUrl +
         '" alt="' +
         escapeHtml(altText) +
         '" />';
     } else {
-      logoEl.classList.remove("has-photo");
+      logoEl.classList.remove("has-logo");
       logoEl.innerHTML = LOCATION_ICON;
     }
   }
@@ -207,7 +195,7 @@
           var fullName = entity.name + ", " + group.name;
           if (titleEl) titleEl.textContent = entity.title || fullName;
           document.title = "Book Tickets — " + fullName + " | ONDC";
-          applyHeaderLogo(entity.photo, fullName);
+          applyHeaderLogo(entity.logo, fullName);
           renderBuyerList(container, entity, fullName);
         } else if (groupSlug) {
           var groupOnly = findBySlug(data.groups, groupSlug);
