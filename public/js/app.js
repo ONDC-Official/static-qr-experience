@@ -94,9 +94,17 @@
       "</div>";
   }
 
+  function trackExperienceView(props) {
+    gtag(
+      "event",
+      "experience_view",
+      Object.assign({ platform_os: os }, props || {})
+    );
+  }
+
   // Renders a plain list of links (groups, or entities within a group) —
   // shared by the group picker and the entity picker.
-  function renderLinkList(container, items, hrefFor) {
+  function renderLinkList(container, items, hrefFor, viewProps) {
     container.innerHTML =
       '<ul class="seller-list">' +
       items
@@ -111,6 +119,8 @@
         })
         .join("") +
       "</ul>";
+
+    trackExperienceView(viewProps || {});
   }
 
   function renderBuyerList(container, group, entity) {
@@ -146,8 +156,9 @@
       });
     });
 
-    gtag("event", "experience_view", {
-      platform_os: os,
+    var fullName = entity.name + ", " + group.name;
+    trackExperienceView({
+      page_title: entity.title || fullName,
       group_name: group.name,
       group_slug: group.slug,
       entity_name: entity.name,
@@ -216,13 +227,27 @@
           if (titleEl) titleEl.textContent = groupOnly.name;
           document.title =
             "Discover Experiences — " + groupOnly.name + " | ONDC";
-          renderLinkList(container, groupOnly.entities, function (entity) {
-            return "/" + groupOnly.slug + "/" + entity.slug + "/";
-          });
+          renderLinkList(
+            container,
+            groupOnly.entities,
+            function (entity) {
+              return "/" + groupOnly.slug + "/" + entity.slug + "/";
+            },
+            {
+              page_title: groupOnly.name,
+              group_name: groupOnly.name,
+              group_slug: groupOnly.slug,
+            }
+          );
         } else {
-          renderLinkList(container, data.groups, function (group) {
-            return "/" + group.slug + "/";
-          });
+          renderLinkList(
+            container,
+            data.groups,
+            function (group) {
+              return "/" + group.slug + "/";
+            },
+            { page_title: "Landing Page" }
+          );
         }
       })
       .catch(function () {
