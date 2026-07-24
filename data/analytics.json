@@ -1,0 +1,18 @@
+{
+  "mumbai": {
+    "propertyId": "546940382",
+    "measurementId": "G-F970TSVDHQ"
+  },
+  "bangalore": {
+    "propertyId": "547017779",
+    "measurementId": "G-JFZ5BZ9RLE"
+  },
+  "kolkata": {
+    "propertyId": "546961098",
+    "measurementId": "G-M5N3VP3V7J"
+  },
+  "delhi": {
+    "propertyId": "546972380",
+    "measurementId": "G-K1KEN0ZZ81"
+  }
+}

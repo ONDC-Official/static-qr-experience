@@ -9,6 +9,7 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const DATA_PATH = path.join(ROOT, "data", "entities.json");
+const ANALYTICS_PATH = path.join(ROOT, "data", "analytics.json");
 const TEMPLATES_DIR = path.join(__dirname, "templates");
 
 // Fixed project directories a group slug must not collide with, and that
@@ -72,10 +73,13 @@ function localAssetPath(ref) {
   return path.join(ROOT, decoded.replace(/^\//, ""));
 }
 
-function validate(data) {
+function validate(data, analytics) {
   const errors = [];
 
   if (!data || typeof data !== "object") die("entities.json must be an object");
+  if (!analytics || typeof analytics !== "object") {
+    die("analytics.json must be an object");
+  }
 
   const site = data.site || {};
   if (!site.gaId) errors.push("site.gaId is required");
@@ -99,6 +103,20 @@ function validate(data) {
 
     if (!group.name)
       errors.push("group " + (group.slug || "?") + " missing name");
+
+    if (group.slug) {
+      const cityAnalytics = analytics[group.slug];
+      if (!cityAnalytics || typeof cityAnalytics !== "object") {
+        errors.push(
+          "analytics.json missing entry for group slug: " + group.slug
+        );
+      } else if (!cityAnalytics.measurementId) {
+        errors.push(
+          "analytics.json missing measurementId for group slug: " + group.slug
+        );
+      }
+    }
+
     if (!Array.isArray(group.entities)) {
       errors.push(
         "group " + (group.slug || "?") + " entities must be an array"
@@ -198,15 +216,19 @@ function removeStale(data) {
   }
 }
 
-function templateVars(site) {
+function templateVars(site, gaId) {
   return {
-    GA_ID: site.gaId,
+    GA_ID: gaId || site.gaId,
     PRODUCT_NAME: site.productName,
     ORG_NAME: site.orgName,
   };
 }
 
-function generate(data) {
+function cityGaId(analytics, groupSlug) {
+  return analytics[groupSlug].measurementId;
+}
+
+function generate(data, analytics) {
   const site = data.site;
   const rootTpl = readTemplate("root.html");
   const groupTpl = readTemplate("group.html");
@@ -216,10 +238,11 @@ function generate(data) {
   console.log("wrote index.html");
 
   for (const group of data.groups) {
+    const gaId = cityGaId(analytics, group.slug);
     writeFile(
       path.join(ROOT, group.slug, "index.html"),
       fill(groupTpl, {
-        ...templateVars(site),
+        ...templateVars(site, gaId),
         GROUP_NAME: group.name,
         GROUP_SLUG: group.slug,
       })
@@ -230,7 +253,7 @@ function generate(data) {
       writeFile(
         path.join(ROOT, group.slug, entity.slug, "index.html"),
         fill(entityTpl, {
-          ...templateVars(site),
+          ...templateVars(site, gaId),
           GROUP_NAME: group.name,
           GROUP_SLUG: group.slug,
           ENTITY_NAME: entity.name,
@@ -244,7 +267,8 @@ function generate(data) {
 }
 
 const data = readJson(DATA_PATH);
-validate(data);
+const analytics = readJson(ANALYTICS_PATH);
+validate(data, analytics);
 removeStale(data);
-generate(data);
+generate(data, analytics);
 console.log("generate: done");

@@ -2,7 +2,6 @@
   "use strict";
 
   var DATA_URL = "/data/entities.json";
-  var GA_ID = "G-X9LS4KMKBC";
 
   var LOCATION_ICON =
     '<svg class="experience-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
@@ -44,6 +43,7 @@
   }
 
   var os = getOS();
+  var GA_ID = document.body.getAttribute("data-ga-id");
 
   window.dataLayer = window.dataLayer || [];
   function gtag() {
@@ -51,7 +51,7 @@
   }
   gtag("js", new Date());
   gtag("set", "user_properties", { platform_os: os });
-  gtag("config", GA_ID);
+  if (GA_ID) gtag("config", GA_ID);
 
   function escapeHtml(str) {
     return String(str).replace(/[&<>"']/g, function (c) {
@@ -94,14 +94,6 @@
       "</div>";
   }
 
-  function trackExperienceView(props) {
-    gtag(
-      "event",
-      "experience_view",
-      Object.assign({ platform: os, platform_os: os }, props || {})
-    );
-  }
-
   // Renders a plain list of links (groups, or entities within a group) —
   // shared by the group picker and the entity picker.
   function renderLinkList(container, items, hrefFor) {
@@ -142,25 +134,18 @@
     container.querySelectorAll(".seller-item a").forEach(function (link) {
       link.addEventListener("click", function () {
         gtag("event", "buyer_app_click", {
-          buyer_app: link.dataset.app || "unknown",
-          platform_os: os,
-          group_name: group.name,
-          group_slug: group.slug,
+          platform: os,
+          buyer_name: link.dataset.app || "unknown",
           entity_name: entity.name,
-          entity_slug: entity.slug,
-          destination_url: link.href,
-          transport_type: "beacon",
+          state: group.name,
         });
       });
     });
 
-    var fullName = entity.name + ", " + group.name;
-    trackExperienceView({
-      page_title: entity.title || fullName,
-      group_name: group.name,
-      group_slug: group.slug,
+    gtag("event", "landing_page", {
+      platform: os,
       entity_name: entity.name,
-      entity_slug: entity.slug,
+      state: group.name,
     });
   }
 
@@ -232,7 +217,6 @@
           renderLinkList(container, data.groups, function (group) {
             return "/" + group.slug + "/";
           });
-          trackExperienceView({ page_title: "Landing Page" });
         }
       })
       .catch(function () {
