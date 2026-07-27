@@ -23,7 +23,7 @@
             {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
-              "url": "https://experiences.highwaydelite.com/mumbai/culture-and-heritage/nehru-science-centre-mumbai"
+              "url": "https://experiences.highwaydelite.com/mumbai/culture-and-heritage/nehru-science-centre-mumbai?ver=2"
             },
             {
               "label": "Staybook",
@@ -57,7 +57,7 @@
             {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
-              "url": "https://experiences.highwaydelite.com/bangalore/culture-and-heritage/visvesvaraya-industrial-technological-museum-bangalore"
+              "url": "https://experiences.highwaydelite.com/bangalore/culture-and-heritage/visvesvaraya-industrial-technological-museum-bangalore?ver=2"
             },
             {
               "label": "Staybook",
@@ -91,7 +91,12 @@
             {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
-              "url": "https://experiences.highwaydelite.com/kolkata/culture-and-heritage/birla-industrial-and-technological-museum"
+              "url": "https://experiences.highwaydelite.com/kolkata/culture-and-heritage/birla-industrial-and-technological-museum?ver=2"
+            },
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/birla-industrial-and-technological-museum"
             },
             {
               "label": "Bino",
@@ -115,12 +120,12 @@
             {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
-              "url": "https://experiences.highwaydelite.com/new-delhi/culture-and-heritage/national-gallery-of-modern-art"
+              "url": "https://experiences.highwaydelite.com/new-delhi/culture-and-heritage/national-gallery-of-modern-art?ver=2"
             },
             {
               "label": "Staybook",
               "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/national-gallery-of-modern-art-delhi"
+              "url": "https://staybook.in/activities/national-gallery-of-modern-art"
             },
             {
               "label": "Bino",
