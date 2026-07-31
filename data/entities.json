@@ -118,6 +118,11 @@
           "logo": "/public/images/buyers/National%20Gallery%20Of%20Modern%20Art%20logo.png",
           "buyers": [
             {
+              "label": "Oneticket",
+              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
+              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019c5287-3021-74f1-a48c-4eb449a41832"
+            },
+            {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/new-delhi/culture-and-heritage/national-gallery-of-modern-art?ver=2"
