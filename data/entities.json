@@ -36,6 +36,24 @@
               "url": "https://b.bino.bot/q/rz-nehru"
             }
           ]
+        },
+        {
+          "slug": "national-gallery-of-modern-art-mumbai",
+          "name": "National Gallery of Modern Art - Mumbai",
+          "title": "Get National Gallery of Modern Art - Mumbai tickets via ONDC",
+          "logo": "/public/images/buyers/National%20Gallery%20Of%20Modern%20Art%20logo.png",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/national-gallery-modern-art-mumbai"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-ngma-mumbai"
+            }
+          ]
         }
       ]
     },
@@ -62,12 +80,30 @@
             {
               "label": "Staybook",
               "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/visvesvaraya-industrial-museum-bangalore"
+              "url": "https://staybook.in/activities/visvesvaraya-industrial-technological-museum-bangalore"
             },
             {
               "label": "Bino",
               "logo": "/public/images/buyers/bino.jpg",
               "url": "https://b.bino.bot/q/rz-vitm"
+            }
+          ]
+        },
+        {
+          "slug": "national-gallery-of-modern-art-bengaluru",
+          "name": "National Gallery of Modern Art Bengaluru",
+          "title": "Get National Gallery of Modern Art Bengaluru tickets via ONDC",
+          "logo": "/public/images/buyers/National%20Gallery%20Of%20Modern%20Art%20logo.png",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/national-gallery-modern-art-bengaluru"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-ngma-bengaluru"
             }
           ]
         }
@@ -104,6 +140,55 @@
               "url": "https://b.bino.bot/q/rz-bitm"
             }
           ]
+        },
+        {
+          "slug": "victoria-memorial-kolkata",
+          "name": "Victoria Memorial Kolkata",
+          "title": "Get Victoria Memorial Kolkata tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/victoria-memorial-hall"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-victoria-memorial"
+            }
+          ]
+        },
+        {
+          "slug": "indian-museum-kolkata",
+          "name": "Indian Museum Kolkata",
+          "title": "Get Indian Museum Kolkata tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/indian-museum"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-indian-museum"
+            }
+          ]
+        },
+        {
+          "slug": "science-city-kolkata",
+          "name": "Science City, Kolkata",
+          "title": "Get Science City, Kolkata tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/science-city-kolkata"
+            }
+          ]
         }
       ]
     },
@@ -114,7 +199,7 @@
         {
           "slug": "national-gallery-of-modern-art-delhi",
           "name": "National Gallery of Modern Art",
-          "title": "Get National Gallery of Modern Art tickets via ONDC",
+          "title": "Get NGMA tickets via ONDC",
           "logo": "/public/images/buyers/National%20Gallery%20Of%20Modern%20Art%20logo.png",
           "buyers": [
             {
@@ -130,12 +215,344 @@
             {
               "label": "Staybook",
               "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/national-gallery-of-modern-art"
+              "url": "https://staybook.in/activities/national-gallery-modern-art"
             },
             {
               "label": "Bino",
               "logo": "/public/images/buyers/bino.jpg",
               "url": "https://b.bino.bot/q/rz-ngma-delhi"
+            }
+          ]
+        },
+        {
+          "slug": "national-museum-delhi",
+          "name": "National Museum Delhi",
+          "title": "Get National Museum Tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/national-museum-new-delhi"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-national-museum-delhi"
+            }
+          ]
+        },
+        {
+          "slug": "national-science-centre-delhi",
+          "name": "National Science Centre, Delhi",
+          "title": "Get National Science Centre Tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/national-science-centre"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hyderabad",
+      "name": "Hyderabad",
+      "entities": [
+        {
+          "slug": "salar-jung-museum-hyderabad",
+          "name": "Salar Jung Museum Hyderabad",
+          "title": "Get Salar Jung Museum Hyderabad tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/salar-jung-museum"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-salar-jung"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "prayagraj",
+      "name": "Prayagraj",
+      "entities": [
+        {
+          "slug": "allahabad-museum-prayagraj",
+          "name": "Allahabad Museum Prayagraj",
+          "title": "Get Allahabad Museum Prayagraj tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/allahabad-museum"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-allahabad-museum"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "lucknow",
+      "name": "Lucknow",
+      "entities": [
+        {
+          "slug": "regional-science-city-lucknow",
+          "name": "Regional Science City, Lucknow",
+          "title": "Get Regional Science City, Lucknow tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/regional-science-city-lucknow"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-rsc-lucknow"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "kurukshetra",
+      "name": "Kurukshetra",
+      "entities": [
+        {
+          "slug": "kurukshetra-panorama-and-science-centre-kurukshetra",
+          "name": "Kurukshetra Panorama and Science centre, Kurukshetra",
+          "title": "Get Kurukshetra Panorama and Science centre, Kurukshetra tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/kurukshetra-panorama-science-centre"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "patna",
+      "name": "Patna",
+      "entities": [
+        {
+          "slug": "shrikrishna-science-centre-patna",
+          "name": "ShriKrishna Science Centre, Patna",
+          "title": "Get ShriKrishna Science Centre, Patna tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/shrikrishna-science-centre-patna"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-shrikrishna-patna"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "bardhaman",
+      "name": "Bardhaman",
+      "entities": [
+        {
+          "slug": "bardhaman-science-centre-bardhaman",
+          "name": "Bardhaman Science Centre, Bardhaman",
+          "title": "Get Bardhaman Science Centre, Bardhaman tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/bardhaman-science-centre"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "purulia",
+      "name": "Purulia",
+      "entities": [
+        {
+          "slug": "district-science-centre-purulia",
+          "name": "District Science Centre, Purulia",
+          "title": "Get District Science Centre, Purulia tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/district-science-centre-purulia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "digha",
+      "name": "Digha",
+      "entities": [
+        {
+          "slug": "digha-science-centre-digha",
+          "name": "Digha Science Centre, Digha",
+          "title": "Get Digha Science Centre, Digha tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/digha-science-centre-national-camp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "siliguri",
+      "name": "Siliguri",
+      "entities": [
+        {
+          "slug": "north-bengal-science-centre-siliguri",
+          "name": "North Bengal Science Centre, Siliguri",
+          "title": "Get North Bengal Science Centre, Siliguri tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/north-bengal-science-centre-siliguri"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nagpur",
+      "name": "Nagpur",
+      "entities": [
+        {
+          "slug": "raman-science-centre-planetarium-nagpur",
+          "name": "Raman Science Centre & Planetarium, Nagpur",
+          "title": "Get Raman Science Centre & Planetarium, Nagpur tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/raman-science-centre-planetarium-nagpur"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-raman-nagpur"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dharampur",
+      "name": "Dharampur",
+      "entities": [
+        {
+          "slug": "district-science-centre-dharampur",
+          "name": "District Science Centre, Dharampur",
+          "title": "Get District Science Centre, Dharampur tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/district-science-centre-dharampur"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "palampur",
+      "name": "Palampur",
+      "entities": [
+        {
+          "slug": "palampur-science-centre-palampur",
+          "name": "Palampur Science Centre, Palampur",
+          "title": "Get Palampur Science Centre, Palampur tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/palampur-science-centre"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tirupati",
+      "name": "Tirupati",
+      "entities": [
+        {
+          "slug": "regional-science-centre-tirupati",
+          "name": "Regional Science Centre, Tirupati",
+          "title": "Get Regional Science Centre, Tirupati tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/regional-science-centre-tirupati"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-rsc-tirupati"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "calicut",
+      "name": "Calicut",
+      "entities": [
+        {
+          "slug": "regional-science-centre-and-planetarium-calicut",
+          "name": "Regional Science Centre & Planetarium, Calicut",
+          "title": "Get Regional Science Centre & Planetarium, Calicut tickets via ONDC",
+          "logo": "",
+          "buyers": [
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/regional-science-centre-and-planetarium-calicut"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-rsc-calicut"
             }
           ]
         }

@@ -81,9 +81,13 @@ body {
 .header {
   width: 100%;
   background: linear-gradient(140deg, #1c75bc 0%, #0e9cd8 60%, #00aeef 100%);
-  padding: 20px 16px 20px;
+  padding: 30px 16px 28px;
+  min-height: 164px;
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 52px;
+  z-index: 90;
 }
 
 .header-hero {
@@ -157,6 +161,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 28px 16px calc(32px + env(safe-area-inset-bottom, 0px));
+  overflow-y: auto;
 }
 
 /* ── Seller / entity / city list ── */
@@ -290,7 +295,8 @@ body {
     padding: 0 24px;
   }
   .header {
-    padding: 32px 24px 28px;
+    padding: 38px 24px 34px;
+    min-height: 198px;
   }
   .header-logo {
     width: 104px;

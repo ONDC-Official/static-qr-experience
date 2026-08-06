@@ -14,5 +14,61 @@
   "delhi": {
     "propertyId": "546972380",
     "measurementId": "G-K1KEN0ZZ81"
+  },
+  "hyderabad": {
+    "propertyId": "548822519",
+    "measurementId": "G-R3M8R5GHY3"
+  },
+  "prayagraj": {
+    "propertyId": "548890891",
+    "measurementId": "G-NJCHHNDGB1"
+  },
+  "lucknow": {
+    "propertyId": "548895147",
+    "measurementId": "G-86PDRRHVL6"
+  },
+  "kurukshetra": {
+    "propertyId": "548794464",
+    "measurementId": "G-3B4E3J2KSK"
+  },
+  "patna": {
+    "propertyId": "548895155",
+    "measurementId": "G-9Z7JSMXGVP"
+  },
+  "bardhaman": {
+    "propertyId": "548895158",
+    "measurementId": "G-TDLHYTQ6TV"
+  },
+  "purulia": {
+    "propertyId": "548897268",
+    "measurementId": "G-SE17Z09H3X"
+  },
+  "digha": {
+    "propertyId": "548897272",
+    "measurementId": "G-GG5FG7PCEK"
+  },
+  "siliguri": {
+    "propertyId": "548893512",
+    "measurementId": "G-M91Z981MZ3"
+  },
+  "nagpur": {
+    "propertyId": "548812104",
+    "measurementId": "G-M526JF0S16"
+  },
+  "dharampur": {
+    "propertyId": "548903522",
+    "measurementId": "G-RSV6DYRKZ0"
+  },
+  "palampur": {
+    "propertyId": "548887998",
+    "measurementId": "G-DT240RGT7M"
+  },
+  "tirupati": {
+    "propertyId": "548898747",
+    "measurementId": "G-4JM3D3CDSZ"
+  },
+  "calicut": {
+    "propertyId": "548849593",
+    "measurementId": "G-TT2E7NZ911"
   }
 }

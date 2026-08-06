@@ -50,7 +50,7 @@
     window.dataLayer.push(arguments);
   }
   gtag("js", new Date());
-  gtag("set", "user_properties", { platform_os: os });
+  gtag("set", "user_properties", { platform: os });
   if (GA_ID) gtag("config", GA_ID);
 
   function escapeHtml(str) {
