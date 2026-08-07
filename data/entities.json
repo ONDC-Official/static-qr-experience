@@ -145,7 +145,7 @@
           "slug": "victoria-memorial-kolkata",
           "name": "Victoria Memorial Kolkata",
           "title": "Get Victoria Memorial Kolkata tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/VictoriaMuesum.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -163,7 +163,7 @@
           "slug": "indian-museum-kolkata",
           "name": "Indian Museum Kolkata",
           "title": "Get Indian Museum Kolkata tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/indianMuseum.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -181,7 +181,7 @@
           "slug": "science-city-kolkata",
           "name": "Science City, Kolkata",
           "title": "Get Science City, Kolkata tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/Science%20City%20Kolkata.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -228,7 +228,7 @@
           "slug": "national-museum-delhi",
           "name": "National Museum Delhi",
           "title": "Get National Museum Tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/National_Museum_New_Delhi.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -246,7 +246,7 @@
           "slug": "national-science-centre-delhi",
           "name": "National Science Centre, Delhi",
           "title": "Get National Science Centre Tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/National%20Science%20centre.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -265,7 +265,7 @@
           "slug": "salar-jung-museum-hyderabad",
           "name": "Salar Jung Museum Hyderabad",
           "title": "Get Salar Jung Museum Hyderabad tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/Salar%20Jung%20Museum%20Hyderabad.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -289,7 +289,7 @@
           "slug": "allahabad-museum-prayagraj",
           "name": "Allahabad Museum Prayagraj",
           "title": "Get Allahabad Museum Prayagraj tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/Allahabad%20museum_.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -313,7 +313,7 @@
           "slug": "regional-science-city-lucknow",
           "name": "Regional Science City, Lucknow",
           "title": "Get Regional Science City, Lucknow tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/Regional%20Science%20City%2C%20Lucknow.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -337,7 +337,7 @@
           "slug": "kurukshetra-panorama-and-science-centre-kurukshetra",
           "name": "Kurukshetra Panorama and Science centre, Kurukshetra",
           "title": "Get Kurukshetra Panorama and Science centre, Kurukshetra tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/Kurukshetra%20Panorama%20and%20Science%20centre%2C%20Kurukshetra.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -356,7 +356,7 @@
           "slug": "shrikrishna-science-centre-patna",
           "name": "ShriKrishna Science Centre, Patna",
           "title": "Get ShriKrishna Science Centre, Patna tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/Shrikrishna%20Science%20Centre.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -380,7 +380,7 @@
           "slug": "bardhaman-science-centre-bardhaman",
           "name": "Bardhaman Science Centre, Bardhaman",
           "title": "Get Bardhaman Science Centre, Bardhaman tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/Bardhaman%20Science%20Centre%2C%20Bardhaman.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -399,7 +399,7 @@
           "slug": "district-science-centre-purulia",
           "name": "District Science Centre, Purulia",
           "title": "Get District Science Centre, Purulia tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/District%20Science%20Centre%2C%20Purulia.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -418,7 +418,7 @@
           "slug": "digha-science-centre-digha",
           "name": "Digha Science Centre, Digha",
           "title": "Get Digha Science Centre, Digha tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/Digha%20Science%20Centre%2C%20Digha.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -437,7 +437,7 @@
           "slug": "north-bengal-science-centre-siliguri",
           "name": "North Bengal Science Centre, Siliguri",
           "title": "Get North Bengal Science Centre, Siliguri tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/North%20Bengal%20Science%20Centre%2C%20Siliguri.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -456,7 +456,7 @@
           "slug": "raman-science-centre-planetarium-nagpur",
           "name": "Raman Science Centre & Planetarium, Nagpur",
           "title": "Get Raman Science Centre & Planetarium, Nagpur tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/Raman%20Science%20Centre%20%26%20Planetarium%2C%20Nagpur.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -480,7 +480,7 @@
           "slug": "district-science-centre-dharampur",
           "name": "District Science Centre, Dharampur",
           "title": "Get District Science Centre, Dharampur tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/District%20Science%20Centre%2C%20Dharampur.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -499,7 +499,7 @@
           "slug": "palampur-science-centre-palampur",
           "name": "Palampur Science Centre, Palampur",
           "title": "Get Palampur Science Centre, Palampur tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/Palampur%20Science%20Centre%2C%20Palampur.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -518,7 +518,7 @@
           "slug": "regional-science-centre-tirupati",
           "name": "Regional Science Centre, Tirupati",
           "title": "Get Regional Science Centre, Tirupati tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/Regional%20Science%20Centre%2C%20Tirupati.png",
           "buyers": [
             {
               "label": "Staybook",
@@ -542,7 +542,7 @@
           "slug": "regional-science-centre-and-planetarium-calicut",
           "name": "Regional Science Centre & Planetarium, Calicut",
           "title": "Get Regional Science Centre & Planetarium, Calicut tickets via ONDC",
-          "logo": "",
+          "logo": "/public/images/buyers/Regional%20Science%20Centre%20%26%20Planetarium%2C%20Calicut.png",
           "buyers": [
             {
               "label": "Staybook",
