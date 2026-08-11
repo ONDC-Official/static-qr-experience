@@ -254,6 +254,19 @@
               "url": "https://staybook.in/activities/national-science-centre"
             }
           ]
+        },
+        {
+          "slug": "pmml-delhi",
+          "name": "PMML",
+          "title": "Get PMML tickets via ONDC",
+          "logo": "/public/images/buyers/PMML.jpg",
+          "buyers": [
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-pm-sangrahalaya"
+            }
+          ]
         }
       ]
     },
@@ -553,6 +566,35 @@
               "label": "Bino",
               "logo": "/public/images/buyers/bino.jpg",
               "url": "https://b.bino.bot/q/rz-rsc-calicut"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gulbarga",
+      "name": "Gulbarga",
+      "entities": [
+        {
+          "slug": "district-science-centre-gulbarga",
+          "name": "District Science Centre, Gulbarga",
+          "title": "Get District Science Centre, Gulbarga tickets via ONDC",
+          "logo": "/public/images/buyers/District_Science_Centre_Kalaburagi.png",
+          "buyers": [
+            {
+              "label": "Oneticket",
+              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
+              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019fd6f9-0805-7740-ac1a-a2d57ca23f1a"
+            },
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/gulbarga/culture-and-heritage/district-science-centre-gulbarga?ver=2"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-dsc-gulbarga"
             }
           ]
         }
