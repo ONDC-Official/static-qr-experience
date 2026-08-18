@@ -16,24 +16,9 @@
           "logo": "/public/images/buyers/Nehru%20science%20center%20logo.jpg",
           "buyers": [
             {
-              "label": "Oneticket",
-              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
-              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019ebb57-e18e-7618-b38c-a1f7cfad76ce"
-            },
-            {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/mumbai/culture-and-heritage/nehru-science-centre-mumbai?ver=2"
-            },
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/nehru-science-centre-mumbai"
-            },
-            {
-              "label": "Bino",
-              "logo": "/public/images/buyers/bino.jpg",
-              "url": "https://b.bino.bot/q/rz-nehru"
             }
           ]
         },
@@ -68,24 +53,9 @@
           "logo": "/public/images/buyers/Visvesvaraya%20Industrial%20and%20technological%20museum%20logo.jpg",
           "buyers": [
             {
-              "label": "Oneticket",
-              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
-              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019e96f1-e59a-7801-b3d9-76885eb546a2"
-            },
-            {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/bangalore/culture-and-heritage/visvesvaraya-industrial-technological-museum-bangalore?ver=2"
-            },
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/visvesvaraya-industrial-technological-museum-bangalore"
-            },
-            {
-              "label": "Bino",
-              "logo": "/public/images/buyers/bino.jpg",
-              "url": "https://b.bino.bot/q/rz-vitm"
             }
           ]
         },
@@ -120,24 +90,9 @@
           "logo": "/public/images/buyers/birla%20industrial%20and%20technological%20museum%20logo.png",
           "buyers": [
             {
-              "label": "Oneticket",
-              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
-              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019da9fc-fc1e-7bf7-a501-e3efaf76d70d"
-            },
-            {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/kolkata/culture-and-heritage/birla-industrial-and-technological-museum?ver=2"
-            },
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/birla-industrial-and-technological-museum"
-            },
-            {
-              "label": "Bino",
-              "logo": "/public/images/buyers/bino.jpg",
-              "url": "https://b.bino.bot/q/rz-bitm"
             }
           ]
         },
@@ -174,19 +129,6 @@
               "label": "Bino",
               "logo": "/public/images/buyers/bino.jpg",
               "url": "https://b.bino.bot/q/rz-indian-museum"
-            }
-          ]
-        },
-        {
-          "slug": "science-city-kolkata",
-          "name": "Science City, Kolkata",
-          "title": "Get Science City, Kolkata tickets via ONDC",
-          "logo": "/public/images/buyers/Science%20City%20Kolkata.png",
-          "buyers": [
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/science-city-kolkata"
             }
           ]
         }
@@ -239,19 +181,6 @@
               "label": "Bino",
               "logo": "/public/images/buyers/bino.jpg",
               "url": "https://b.bino.bot/q/rz-national-museum-delhi"
-            }
-          ]
-        },
-        {
-          "slug": "national-science-centre-delhi",
-          "name": "National Science Centre, Delhi",
-          "title": "Get National Science Centre Tickets via ONDC",
-          "logo": "/public/images/buyers/National%20Science%20centre.png",
-          "buyers": [
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/national-science-centre"
             }
           ]
         },
@@ -318,259 +247,7 @@
         }
       ]
     },
-    {
-      "slug": "lucknow",
-      "name": "Lucknow",
-      "entities": [
-        {
-          "slug": "regional-science-city-lucknow",
-          "name": "Regional Science City, Lucknow",
-          "title": "Get Regional Science City, Lucknow tickets via ONDC",
-          "logo": "/public/images/buyers/Regional%20Science%20City%2C%20Lucknow.png",
-          "buyers": [
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/regional-science-city-lucknow"
-            },
-            {
-              "label": "Bino",
-              "logo": "/public/images/buyers/bino.jpg",
-              "url": "https://b.bino.bot/q/rz-rsc-lucknow"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "kurukshetra",
-      "name": "Kurukshetra",
-      "entities": [
-        {
-          "slug": "kurukshetra-panorama-and-science-centre-kurukshetra",
-          "name": "Kurukshetra Panorama and Science centre, Kurukshetra",
-          "title": "Get Kurukshetra Panorama and Science centre, Kurukshetra tickets via ONDC",
-          "logo": "/public/images/buyers/Kurukshetra%20Panorama%20and%20Science%20centre%2C%20Kurukshetra.png",
-          "buyers": [
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/kurukshetra-panorama-science-centre"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "patna",
-      "name": "Patna",
-      "entities": [
-        {
-          "slug": "shrikrishna-science-centre-patna",
-          "name": "ShriKrishna Science Centre, Patna",
-          "title": "Get ShriKrishna Science Centre, Patna tickets via ONDC",
-          "logo": "/public/images/buyers/Shrikrishna%20Science%20Centre.png",
-          "buyers": [
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/shrikrishna-science-centre-patna"
-            },
-            {
-              "label": "Bino",
-              "logo": "/public/images/buyers/bino.jpg",
-              "url": "https://b.bino.bot/q/rz-shrikrishna-patna"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "bardhaman",
-      "name": "Bardhaman",
-      "entities": [
-        {
-          "slug": "bardhaman-science-centre-bardhaman",
-          "name": "Bardhaman Science Centre, Bardhaman",
-          "title": "Get Bardhaman Science Centre, Bardhaman tickets via ONDC",
-          "logo": "/public/images/buyers/Bardhaman%20Science%20Centre%2C%20Bardhaman.png",
-          "buyers": [
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/bardhaman-science-centre"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "purulia",
-      "name": "Purulia",
-      "entities": [
-        {
-          "slug": "district-science-centre-purulia",
-          "name": "District Science Centre, Purulia",
-          "title": "Get District Science Centre, Purulia tickets via ONDC",
-          "logo": "/public/images/buyers/District%20Science%20Centre%2C%20Purulia.png",
-          "buyers": [
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/district-science-centre-purulia"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "digha",
-      "name": "Digha",
-      "entities": [
-        {
-          "slug": "digha-science-centre-digha",
-          "name": "Digha Science Centre, Digha",
-          "title": "Get Digha Science Centre, Digha tickets via ONDC",
-          "logo": "/public/images/buyers/Digha%20Science%20Centre%2C%20Digha.png",
-          "buyers": [
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/digha-science-centre-national-camp"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "siliguri",
-      "name": "Siliguri",
-      "entities": [
-        {
-          "slug": "north-bengal-science-centre-siliguri",
-          "name": "North Bengal Science Centre, Siliguri",
-          "title": "Get North Bengal Science Centre, Siliguri tickets via ONDC",
-          "logo": "/public/images/buyers/North%20Bengal%20Science%20Centre%2C%20Siliguri.png",
-          "buyers": [
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/north-bengal-science-centre-siliguri"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "nagpur",
-      "name": "Nagpur",
-      "entities": [
-        {
-          "slug": "raman-science-centre-planetarium-nagpur",
-          "name": "Raman Science Centre & Planetarium, Nagpur",
-          "title": "Get Raman Science Centre & Planetarium, Nagpur tickets via ONDC",
-          "logo": "/public/images/buyers/Raman%20Science%20Centre%20%26%20Planetarium%2C%20Nagpur.png",
-          "buyers": [
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/raman-science-centre-planetarium-nagpur"
-            },
-            {
-              "label": "Bino",
-              "logo": "/public/images/buyers/bino.jpg",
-              "url": "https://b.bino.bot/q/rz-raman-nagpur"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "dharampur",
-      "name": "Dharampur",
-      "entities": [
-        {
-          "slug": "district-science-centre-dharampur",
-          "name": "District Science Centre, Dharampur",
-          "title": "Get District Science Centre, Dharampur tickets via ONDC",
-          "logo": "/public/images/buyers/District%20Science%20Centre%2C%20Dharampur.png",
-          "buyers": [
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/district-science-centre-dharampur"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "palampur",
-      "name": "Palampur",
-      "entities": [
-        {
-          "slug": "palampur-science-centre-palampur",
-          "name": "Palampur Science Centre, Palampur",
-          "title": "Get Palampur Science Centre, Palampur tickets via ONDC",
-          "logo": "/public/images/buyers/Palampur%20Science%20Centre%2C%20Palampur.png",
-          "buyers": [
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/palampur-science-centre"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "tirupati",
-      "name": "Tirupati",
-      "entities": [
-        {
-          "slug": "regional-science-centre-tirupati",
-          "name": "Regional Science Centre, Tirupati",
-          "title": "Get Regional Science Centre, Tirupati tickets via ONDC",
-          "logo": "/public/images/buyers/Regional%20Science%20Centre%2C%20Tirupati.png",
-          "buyers": [
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/regional-science-centre-tirupati"
-            },
-            {
-              "label": "Bino",
-              "logo": "/public/images/buyers/bino.jpg",
-              "url": "https://b.bino.bot/q/rz-rsc-tirupati"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "calicut",
-      "name": "Calicut",
-      "entities": [
-        {
-          "slug": "regional-science-centre-and-planetarium-calicut",
-          "name": "Regional Science Centre & Planetarium, Calicut",
-          "title": "Get Regional Science Centre & Planetarium, Calicut tickets via ONDC",
-          "logo": "/public/images/buyers/Regional%20Science%20Centre%20%26%20Planetarium%2C%20Calicut.png",
-          "buyers": [
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/regional-science-centre-and-planetarium-calicut"
-            },
-            {
-              "label": "Bino",
-              "logo": "/public/images/buyers/bino.jpg",
-              "url": "https://b.bino.bot/q/rz-rsc-calicut"
-            }
-          ]
-        }
-      ]
-    },
+
     {
       "slug": "gulbarga",
       "name": "Gulbarga",
@@ -582,19 +259,9 @@
           "logo": "/public/images/buyers/District_Science_Centre_Kalaburagi.png",
           "buyers": [
             {
-              "label": "Oneticket",
-              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
-              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019fd6f9-0805-7740-ac1a-a2d57ca23f1a"
-            },
-            {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/gulbarga/culture-and-heritage/district-science-centre-gulbarga?ver=2"
-            },
-            {
-              "label": "Bino",
-              "logo": "/public/images/buyers/bino.jpg",
-              "url": "https://b.bino.bot/q/rz-dsc-gulbarga"
             }
           ]
         }
