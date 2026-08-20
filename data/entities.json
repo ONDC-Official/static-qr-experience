@@ -42,6 +42,11 @@
               "label": "Bino",
               "logo": "/public/images/buyers/bino.jpg",
               "url": "https://b.bino.bot/q/rz-ngma-mumbai"
+            },
+            {
+              "label": "Oneticket",
+              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
+              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019d0c39-24eb-73cf-940d-b4986fdff3b8"
             }
           ]
         }
