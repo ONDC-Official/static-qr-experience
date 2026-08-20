@@ -29,6 +29,11 @@
           "logo": "/public/images/buyers/National%20Gallery%20Of%20Modern%20Art%20logo.png",
           "buyers": [
             {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/mumbai/culture-and-heritage/national-gallery-of-modern-art-mumbai?ver=2"
+            },
+            {
               "label": "Staybook",
               "logo": "/public/images/buyers/staybook-logo.png",
               "url": "https://staybook.in/activities/national-gallery-modern-art-mumbai"
@@ -65,6 +70,11 @@
           "title": "Get National Gallery of Modern Art Bengaluru tickets via ONDC",
           "logo": "/public/images/buyers/National%20Gallery%20Of%20Modern%20Art%20logo.png",
           "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/bangalore/culture-and-heritage/national-gallery-of-modern-art-bengaluru?ver=2"
+            },
             {
               "label": "Staybook",
               "logo": "/public/images/buyers/staybook-logo.png",
@@ -103,6 +113,11 @@
           "logo": "/public/images/buyers/VictoriaMuesum.png",
           "buyers": [
             {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/kolkata/culture-and-heritage/victoria-memorial-hall?ver=2"
+            },
+            {
               "label": "Staybook",
               "logo": "/public/images/buyers/staybook-logo.png",
               "url": "https://staybook.in/activities/victoria-memorial-hall"
@@ -120,6 +135,11 @@
           "title": "Get Indian Museum Kolkata tickets via ONDC",
           "logo": "/public/images/buyers/indianMuseum.png",
           "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/kolkata/culture-and-heritage/indian-museum?ver=2"
+            },
             {
               "label": "Staybook",
               "logo": "/public/images/buyers/staybook-logo.png",
@@ -173,6 +193,11 @@
           "logo": "/public/images/buyers/National_Museum_New_Delhi.png",
           "buyers": [
             {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/new-delhi/culture-and-heritage/national-museum-new-delhi?ver=2"
+            },
+            {
               "label": "Staybook",
               "logo": "/public/images/buyers/staybook-logo.png",
               "url": "https://staybook.in/activities/national-museum-new-delhi"
@@ -181,6 +206,19 @@
               "label": "Bino",
               "logo": "/public/images/buyers/bino.jpg",
               "url": "https://b.bino.bot/q/rz-national-museum-delhi"
+            }
+          ]
+        },
+        {
+          "slug": "national-science-centre-delhi",
+          "name": "National Science Centre, Delhi",
+          "title": "Get National Science Centre Tickets via ONDC",
+          "logo": "/public/images/buyers/National%20Science%20centre.png",
+          "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/new-delhi/culture-and-heritage/national-science-centre-delhi?ver=2"
             }
           ]
         },
@@ -210,6 +248,11 @@
           "logo": "/public/images/buyers/Salar%20Jung%20Museum%20Hyderabad.png",
           "buyers": [
             {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/hyderabad-loc/culture-and-heritage/salar-jung-museum?ver=2"
+            },
+            {
               "label": "Staybook",
               "logo": "/public/images/buyers/staybook-logo.png",
               "url": "https://staybook.in/activities/salar-jung-museum"
@@ -233,6 +276,11 @@
           "title": "Get Allahabad Museum Prayagraj tickets via ONDC",
           "logo": "/public/images/buyers/Allahabad%20museum_.png",
           "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/allahabad/culture-and-heritage/allahabad-museum?ver=2"
+            },
             {
               "label": "Staybook",
               "logo": "/public/images/buyers/staybook-logo.png",
@@ -262,6 +310,234 @@
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/gulbarga/culture-and-heritage/district-science-centre-gulbarga?ver=2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "patna",
+      "name": "Patna",
+      "entities": [
+        {
+          "slug": "shrikrishna-science-centre-patna",
+          "name": "ShriKrishna Science Centre, Patna",
+          "title": "Get ShriKrishna Science Centre, Patna tickets via ONDC",
+          "logo": "/public/images/buyers/Shrikrishna%20Science%20Centre.png",
+          "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/patna/culture-and-heritage/shrikrishna-science-centre-patna?ver=2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "bardhaman",
+      "name": "Bardhaman",
+      "entities": [
+        {
+          "slug": "bardhaman-science-centre-bardhaman",
+          "name": "Bardhaman Science Centre, Bardhaman",
+          "title": "Get Bardhaman Science Centre, Bardhaman tickets via ONDC",
+          "logo": "/public/images/buyers/Bardhaman%20Science%20Centre%2C%20Bardhaman.png",
+          "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/durgapur/culture-and-heritage/bardhaman-science-centre-bardhaman?ver=2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "purulia",
+      "name": "Purulia",
+      "entities": [
+        {
+          "slug": "district-science-centre-purulia",
+          "name": "District Science Centre, Purulia",
+          "title": "Get District Science Centre, Purulia tickets via ONDC",
+          "logo": "/public/images/buyers/District%20Science%20Centre%2C%20Purulia.png",
+          "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/raghunathpur/culture-and-heritage/district-science-centre-purulia?ver=2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "digha",
+      "name": "Digha",
+      "entities": [
+        {
+          "slug": "digha-science-centre-digha",
+          "name": "Digha Science Centre, Digha",
+          "title": "Get Digha Science Centre, Digha tickets via ONDC",
+          "logo": "/public/images/buyers/Digha%20Science%20Centre%2C%20Digha.png",
+          "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/bankura/culture-and-heritage/digha-science-centre-national-science-camp?ver=2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "siliguri",
+      "name": "Siliguri",
+      "entities": [
+        {
+          "slug": "north-bengal-science-centre-siliguri",
+          "name": "North Bengal Science Centre, Siliguri",
+          "title": "Get North Bengal Science Centre, Siliguri tickets via ONDC",
+          "logo": "/public/images/buyers/North%20Bengal%20Science%20Centre%2C%20Siliguri.png",
+          "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/jalpaiguri/culture-and-heritage/north-bengal-science-centre-siliguri?ver=2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nagpur",
+      "name": "Nagpur",
+      "entities": [
+        {
+          "slug": "raman-science-centre-planetarium-nagpur",
+          "name": "Raman Science Centre & Planetarium, Nagpur",
+          "title": "Get Raman Science Centre & Planetarium, Nagpur tickets via ONDC",
+          "logo": "/public/images/buyers/Raman%20Science%20Centre%20%26%20Planetarium%2C%20Nagpur.png",
+          "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/nagpur/culture-and-heritage/raman-science-centre-planetarium-nagpur?ver=2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dharampur",
+      "name": "Dharampur",
+      "entities": [
+        {
+          "slug": "district-science-centre-dharampur",
+          "name": "District Science Centre, Dharampur",
+          "title": "Get District Science Centre, Dharampur tickets via ONDC",
+          "logo": "/public/images/buyers/District%20Science%20Centre%2C%20Dharampur.png",
+          "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/dharampur/culture-and-heritage/district-science-centre-dharampur?ver=2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "lucknow",
+      "name": "Lucknow",
+      "entities": [
+        {
+          "slug": "regional-science-city-lucknow",
+          "name": "Regional Science City, Lucknow",
+          "title": "Get Regional Science City, Lucknow tickets via ONDC",
+          "logo": "/public/images/buyers/Regional%20Science%20City%2C%20Lucknow.png",
+          "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/lucknow/culture-and-heritage/regional-science-city-lucknow?ver=2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "kurukshetra",
+      "name": "Kurukshetra",
+      "entities": [
+        {
+          "slug": "kurukshetra-panorama-and-science-centre-kurukshetra",
+          "name": "Kurukshetra Panorama and Science centre, Kurukshetra",
+          "title": "Get Kurukshetra Panorama and Science centre, Kurukshetra tickets via ONDC",
+          "logo": "/public/images/buyers/Kurukshetra%20Panorama%20and%20Science%20centre%2C%20Kurukshetra.png",
+          "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/kurukshetra/culture-and-heritage/kurukshetra-panorama-science-centre?ver=2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "palampur",
+      "name": "Palampur",
+      "entities": [
+        {
+          "slug": "palampur-science-centre-palampur",
+          "name": "Palampur Science Centre, Palampur",
+          "title": "Get Palampur Science Centre, Palampur tickets via ONDC",
+          "logo": "/public/images/buyers/Palampur%20Science%20Centre%2C%20Palampur.png",
+          "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/palampur/culture-and-heritage/palampur-science-centre?ver=2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tirupati",
+      "name": "Tirupati",
+      "entities": [
+        {
+          "slug": "regional-science-centre-tirupati",
+          "name": "Regional Science Centre, Tirupati",
+          "title": "Get Regional Science Centre, Tirupati tickets via ONDC",
+          "logo": "/public/images/buyers/Regional%20Science%20Centre%2C%20Tirupati.png",
+          "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/tirupathi/culture-and-heritage/regional-science-centre-tirupati?ver=2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "calicut",
+      "name": "Calicut",
+      "entities": [
+        {
+          "slug": "regional-science-centre-and-planetarium-calicut",
+          "name": "Regional Science Centre & Planetarium, Calicut",
+          "title": "Get Regional Science Centre & Planetarium, Calicut tickets via ONDC",
+          "logo": "/public/images/buyers/Regional%20Science%20Centre%20%26%20Planetarium%2C%20Calicut.png",
+          "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://experiences.highwaydelite.com/calicut/culture-and-heritage/regional-science-centre-and-planetarium-calicut?ver=2"
             }
           ]
         }
