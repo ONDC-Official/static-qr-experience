@@ -89,6 +89,11 @@
               "label": "Bino",
               "logo": "/public/images/buyers/bino.jpg",
               "url": "https://b.bino.bot/q/rz-ngma-bengaluru"
+            },
+            {
+              "label": "Oneticket",
+              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
+              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019d0bde-ea47-731c-a1bf-6aac10ed7688"
             }
           ]
         }
@@ -121,16 +126,6 @@
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/kolkata/culture-and-heritage/victoria-memorial-hall?ver=2"
-            },
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/victoria-memorial-hall"
-            },
-            {
-              "label": "Bino",
-              "logo": "/public/images/buyers/bino.jpg",
-              "url": "https://b.bino.bot/q/rz-victoria-memorial"
             }
           ]
         },
@@ -144,16 +139,6 @@
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/kolkata/culture-and-heritage/indian-museum?ver=2"
-            },
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/indian-museum"
-            },
-            {
-              "label": "Bino",
-              "logo": "/public/images/buyers/bino.jpg",
-              "url": "https://b.bino.bot/q/rz-indian-museum"
             }
           ]
         }
@@ -201,16 +186,6 @@
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/new-delhi/culture-and-heritage/national-museum-new-delhi?ver=2"
-            },
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/national-museum-new-delhi"
-            },
-            {
-              "label": "Bino",
-              "logo": "/public/images/buyers/bino.jpg",
-              "url": "https://b.bino.bot/q/rz-national-museum-delhi"
             }
           ]
         },
@@ -256,16 +231,6 @@
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/hyderabad-loc/culture-and-heritage/salar-jung-museum?ver=2"
-            },
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/salar-jung-museum"
-            },
-            {
-              "label": "Bino",
-              "logo": "/public/images/buyers/bino.jpg",
-              "url": "https://b.bino.bot/q/rz-salar-jung"
             }
           ]
         }
@@ -285,16 +250,6 @@
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/allahabad/culture-and-heritage/allahabad-museum?ver=2"
-            },
-            {
-              "label": "Staybook",
-              "logo": "/public/images/buyers/staybook-logo.png",
-              "url": "https://staybook.in/activities/allahabad-museum"
-            },
-            {
-              "label": "Bino",
-              "logo": "/public/images/buyers/bino.jpg",
-              "url": "https://b.bino.bot/q/rz-allahabad-museum"
             }
           ]
         }
