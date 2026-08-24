@@ -141,6 +141,19 @@
               "url": "https://experiences.highwaydelite.com/kolkata/culture-and-heritage/indian-museum?ver=2"
             }
           ]
+        },
+        {
+          "slug": "science-city-kolkata",
+          "name": "Science City Kolkata",
+          "title": "Get Science City Kolkata tickets via ONDC",
+          "logo": "/public/images/buyers/Science%20City%20Kolkata.png",
+          "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://hwdlte.com/OaizDT"
+            }
+          ]
         }
       ]
     },
@@ -198,7 +211,7 @@
             {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
-              "url": "https://experiences.highwaydelite.com/new-delhi/culture-and-heritage/national-science-centre-delhi?ver=2"
+              "url": "https://hwdlte.com/UDDy6l"
             }
           ]
         },
@@ -255,7 +268,6 @@
         }
       ]
     },
-
     {
       "slug": "gulbarga",
       "name": "Gulbarga",
@@ -421,7 +433,7 @@
             {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
-              "url": "https://experiences.highwaydelite.com/lucknow/culture-and-heritage/regional-science-city-lucknow?ver=2"
+              "url": "https://hwdlte.com/NrMAJv"
             }
           ]
         }
@@ -440,7 +452,7 @@
             {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
-              "url": "https://experiences.highwaydelite.com/kurukshetra/culture-and-heritage/kurukshetra-panorama-science-centre?ver=2"
+              "url": "https://hwdlte.com/4NXvi1"
             }
           ]
         }
@@ -459,7 +471,7 @@
             {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
-              "url": "https://experiences.highwaydelite.com/palampur/culture-and-heritage/palampur-science-centre?ver=2"
+              "url": "https://hwdlte.com/vPuLYW"
             }
           ]
         }
@@ -498,6 +510,25 @@
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/calicut/culture-and-heritage/regional-science-centre-and-planetarium-calicut?ver=2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tirunelveli",
+      "name": "Tirunelveli",
+      "entities": [
+        {
+          "slug": "district-science-centre-tirunelveli",
+          "name": "District Science Centre, Tirunelveli",
+          "title": "Get District Science Centre, Tirunelveli tickets via ONDC",
+          "logo": "/public/images/buyers/District Science Centre_Tirunelveli.png",
+          "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://hwdlte.com/GWyjIx"
             }
           ]
         }
