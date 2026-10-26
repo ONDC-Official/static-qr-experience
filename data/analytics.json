@@ -78,5 +78,9 @@
   "tirunelveli": {
     "propertyId": "551228211",
     "measurementId": "G-Z9QCQ8N9T6"
+  },
+  "bhopal": {
+    "propertyId": "REPLACE_ME",
+    "measurementId": "G-REPLACEME"
   }
 }
