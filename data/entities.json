@@ -29,6 +29,11 @@
           "logo": "/public/images/buyers/National%20Gallery%20Of%20Modern%20Art%20logo.png",
           "buyers": [
             {
+              "label": "Oneticket",
+              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
+              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019d0c39-24eb-73cf-940d-b4986fdff3b8"
+            },
+            {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/mumbai/culture-and-heritage/national-gallery-of-modern-art-mumbai?ver=2"
@@ -44,9 +49,14 @@
               "url": "https://b.bino.bot/q/rz-ngma-mumbai"
             },
             {
-              "label": "Oneticket",
-              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
-              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019d0c39-24eb-73cf-940d-b4986fdff3b8"
+              "label": "Rapido",
+              "logo": "/public/images/buyers/rapido.png",
+              "url": "https://hwdlte.com/EQowH-"
+            },
+            {
+              "label": "Bajaj Finserv",
+              "logo": "/public/images/buyers/bajaj-finserv.png",
+              "url": "https://hwdlte.com/2ATlAe"
             }
           ]
         }
@@ -76,6 +86,16 @@
           "logo": "/public/images/buyers/National%20Gallery%20Of%20Modern%20Art%20logo.png",
           "buyers": [
             {
+              "label": "Bajaj Finserv",
+              "logo": "/public/images/buyers/bajaj-finserv.png",
+              "url": "https://hwdlte.com/BGgfPb"
+            },
+            {
+              "label": "Oneticket",
+              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
+              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019d0bde-ea47-731c-a1bf-6aac10ed7688"
+            },
+            {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/bangalore/culture-and-heritage/national-gallery-of-modern-art-bengaluru?ver=2"
@@ -91,9 +111,9 @@
               "url": "https://b.bino.bot/q/rz-ngma-bengaluru"
             },
             {
-              "label": "Oneticket",
-              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
-              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019d0bde-ea47-731c-a1bf-6aac10ed7688"
+              "label": "Rapido",
+              "logo": "/public/images/buyers/rapido.png",
+              "url": "https://hwdlte.com/lDO65L"
             }
           ]
         }
@@ -123,9 +143,34 @@
           "logo": "/public/images/buyers/VictoriaMuesum.png",
           "buyers": [
             {
+              "label": "Bajaj Finserv",
+              "logo": "/public/images/buyers/bajaj-finserv.png",
+              "url": "https://hwdlte.com/CWqaQs"
+            },
+            {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/kolkata/culture-and-heritage/victoria-memorial-hall?ver=2"
+            },
+            {
+              "label": "Oneticket",
+              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
+              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019d7b32-3dee-7e53-bd7e-443a05e95597"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-victoria-memorial"
+            },
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/victoria-memorial-hall"
+            },
+            {
+              "label": "Rapido",
+              "logo": "/public/images/buyers/rapido.png",
+              "url": "https://hwdlte.com/BUwWZx"
             }
           ]
         },
@@ -139,6 +184,31 @@
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/kolkata/culture-and-heritage/indian-museum?ver=2"
+            },
+            {
+              "label": "Bajaj Finserv",
+              "logo": "/public/images/buyers/bajaj-finserv.png",
+              "url": "https://hwdlte.com/UZWhwd"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-indian-museum"
+            },
+            {
+              "label": "Rapido",
+              "logo": "/public/images/buyers/rapido.png",
+              "url": "https://hwdlte.com/wFREQj"
+            },
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/indian-museum"
+            },
+            {
+              "label": "Oneticket",
+              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
+              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019d7b05-95e5-7279-bebc-85820f485ef4"
             }
           ]
         },
@@ -149,9 +219,34 @@
           "logo": "/public/images/buyers/Science%20City%20Kolkata.png",
           "buyers": [
             {
+              "label": "Rapido",
+              "logo": "/public/images/buyers/rapido.png",
+              "url": "https://hwdlte.com/5pf-Be"
+            },
+            {
+              "label": "Bajaj Finserv",
+              "logo": "/public/images/buyers/bajaj-finserv.png",
+              "url": "https://hwdlte.com/vHC_A9"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-science-city-kolkata"
+            },
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/science-city-kolkata"
+            },
+            {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://hwdlte.com/OaizDT"
+            },
+            {
+              "label": "Oneticket",
+              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
+              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019f5a79-5e46-74b5-9532-2e4a06fcd8bd"
             }
           ]
         }
@@ -167,6 +262,16 @@
           "title": "Get NGMA tickets via ONDC",
           "logo": "/public/images/buyers/National%20Gallery%20Of%20Modern%20Art%20logo.png",
           "buyers": [
+            {
+              "label": "Rapido",
+              "logo": "/public/images/buyers/rapido.png",
+              "url": "https://hwdlte.com/7H00-u"
+            },
+            {
+              "label": "Bajaj Finserv",
+              "logo": "/public/images/buyers/bajaj-finserv.png",
+              "url": "https://hwdlte.com/CiAtiV"
+            },
             {
               "label": "Oneticket",
               "logo": "/public/images/buyers/Oneticket%20logo.jpg",
@@ -241,9 +346,34 @@
           "logo": "/public/images/buyers/Salar%20Jung%20Museum%20Hyderabad.png",
           "buyers": [
             {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-salar-jung"
+            },
+            {
+              "label": "Rapido",
+              "logo": "/public/images/buyers/rapido.png",
+              "url": "https://hwdlte.com/faz2X_"
+            },
+            {
+              "label": "Bajaj Finserv",
+              "logo": "/public/images/buyers/bajaj-finserv.png",
+              "url": "https://hwdlte.com/jla9BB"
+            },
+            {
+              "label": "Oneticket",
+              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
+              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019dae7e-348d-7471-8711-291f4b7b82a9"
+            },
+            {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/hyderabad-loc/culture-and-heritage/salar-jung-museum?ver=2"
+            },
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/salar-jung-museum"
             }
           ]
         }
@@ -431,6 +561,31 @@
           "logo": "/public/images/buyers/Regional%20Science%20City%2C%20Lucknow.png",
           "buyers": [
             {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/regional-science-city-lucknow"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-rsc-lucknow"
+            },
+            {
+              "label": "Rapido",
+              "logo": "/public/images/buyers/rapido.png",
+              "url": "https://hwdlte.com/d6EYtO"
+            },
+            {
+              "label": "Bajaj Finserv",
+              "logo": "/public/images/buyers/bajaj-finserv.png",
+              "url": "https://hwdlte.com/vVL8DK"
+            },
+            {
+              "label": "Oneticket",
+              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
+              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019da0a2-4af3-7411-b563-84d724cd1f15"
+            },
+            {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://hwdlte.com/NrMAJv"
@@ -450,9 +605,34 @@
           "logo": "/public/images/buyers/Kurukshetra%20Panorama%20and%20Science%20centre%2C%20Kurukshetra.png",
           "buyers": [
             {
+              "label": "Oneticket",
+              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
+              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019da0dc-93f9-72b3-8b78-79b2c89f5128"
+            },
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/kurukshetra-panorama-science-centre"
+            },
+            {
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://hwdlte.com/4NXvi1"
+            },
+            {
+              "label": "Rapido",
+              "logo": "/public/images/buyers/rapido.png",
+              "url": "https://hwdlte.com/AtN8e5"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-kurukshetra"
+            },
+            {
+              "label": "Bajaj Finserv",
+              "logo": "/public/images/buyers/bajaj-finserv.png",
+              "url": "https://hwdlte.com/n6r2wm"
             }
           ]
         }
@@ -472,6 +652,31 @@
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://hwdlte.com/vPuLYW"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-palampur"
+            },
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/palampur-science-centre"
+            },
+            {
+              "label": "Bajaj Finserv",
+              "logo": "/public/images/buyers/bajaj-finserv.png",
+              "url": "https://hwdlte.com/DTMG-R"
+            },
+            {
+              "label": "Rapido",
+              "logo": "/public/images/buyers/rapido.png",
+              "url": "https://hwdlte.com/-gcM1g"
+            },
+            {
+              "label": "Oneticket",
+              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
+              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019da940-bda1-7031-b6bf-a7197aee89a4"
             }
           ]
         }
