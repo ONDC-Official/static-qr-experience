@@ -757,6 +757,35 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "goa",
+      "name": "Goa",
+      "entities": [
+        {
+          "slug": "goa-science-centre-goa",
+          "name": "Goa Science Centre",
+          "title": "Get Goa Science Centre, Goa tickets via ONDC",
+          "logo": "/public/images/buyers/Goa%20Science%20Centre.png",
+          "buyers": [
+            {
+              "label": "Highway Delite",
+              "logo": "/public/images/buyers/highway-delite.png",
+              "url": "https://hwdlte.com/kLMpP_"
+            },
+            {
+              "label": "Rapido",
+              "logo": "/public/images/buyers/rapido.png",
+              "url": "https://hwdlte.com/V0qCVw"
+            },
+            {
+              "label": "Bajaj Finserv",
+              "logo": "/public/images/buyers/bajaj-finserv.png",
+              "url": "https://hwdlte.com/LCWkqY"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
