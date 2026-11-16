@@ -91,6 +91,16 @@
               "label": "Oneticket",
               "logo": "/public/images/buyers/Oneticket%20logo.jpg",
               "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019e96f1-e59a-7801-b3d9-76885eb546a2"
+            },
+            {
+              "label": "Rapido",
+              "logo": "/public/images/buyers/rapido.png",
+              "url": "https://hwdlte.com/QVHYJ3"
+            },
+            {
+              "label": "Bajaj Finserv",
+              "logo": "/public/images/buyers/bajaj-finserv.png",
+              "url": "https://hwdlte.com/IxoEsR"
             }
           ]
         },
