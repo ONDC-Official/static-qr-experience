@@ -76,6 +76,21 @@
               "label": "Highway Delite",
               "logo": "/public/images/buyers/highway-delite.png",
               "url": "https://experiences.highwaydelite.com/bangalore/culture-and-heritage/visvesvaraya-industrial-technological-museum-bangalore?ver=2"
+            },
+            {
+              "label": "Staybook",
+              "logo": "/public/images/buyers/staybook-logo.png",
+              "url": "https://staybook.in/activities/visvesvaraya-industrial-technological-museum-bangalore"
+            },
+            {
+              "label": "Bino",
+              "logo": "/public/images/buyers/bino.jpg",
+              "url": "https://b.bino.bot/q/rz-vitm"
+            },
+            {
+              "label": "Oneticket",
+              "logo": "/public/images/buyers/Oneticket%20logo.jpg",
+              "url": "https://ondc-prod-eventpass.sequelstring.com/oneticket/oneticket/express-booking?bpp_id=ondc.highwaydelite.com&parent_id=019e96f1-e59a-7801-b3d9-76885eb546a2"
             }
           ]
         },
